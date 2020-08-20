@@ -1,3 +1,76 @@
+body {
+  font-family: "lato", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 1rem;
+}
+h1,
+h2 {
+  font-size: 1.9rem;
+}
+/* header h1 .pro {
+  border-radius: 1rem;
+  border: 1px solid rgb(22, 188, 230);
+  background-color: rgb(31, 193, 252);
+  font-size: 0.6rem;
+  padding: 0.1rem 0.6rem;
+  margin-right: rem;
+  color: black;
+} */
 ul.list-group {
   min-height: 130px;
+}
+.dropover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.dropover-active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.bottom-trash {
+  opacity: 0;
+  color: #f1f1f1;
+  font-size: 2.3rem;
+  transform: translateY(150px);
+  transition: 0.5s all ease-in-out;
+  background-color: rgba(234, 0, 39, 0.7);
+}
+.bottom-trash-drag {
+  transform: translateY(0);
+  opacity: 1;
+}
+.bottom-trash-active {
+  background-color: rgba(234, 0, 39, 1);
+}
+.btn-add,
+.btn-save {
+  background-color: #ea0028;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  background-size: 1px 100px;
+  transition: 0.5s all ease-in-out;
+  background-position: 0 -10px;
+}
+.btn-delete,
+.btn-close {
+  background-color: #fa8bff;
+  background-image: linear-gradient(180deg, #ff9a8b 0%, #ea0028 100%);
+  background-size: 1px 100px;
+  transition: 0.5s all ease-in-out;
+  background-position: 0 -10px;
+}
+.btn-add:hover,
+.btn-close:hover,
+.btn-delete:hover,
+.btn-save:hover {
+  background-position: 1px -50px;
 }
